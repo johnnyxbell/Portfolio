@@ -5,6 +5,14 @@ import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 
+import { injectGlobal } from 'styled-components';
+
+injectGlobal`
+  body {
+    margin: 0;
+  }
+`;
+
 class AppIndex extends React.Component {
 
     render() {
