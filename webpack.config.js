@@ -61,13 +61,13 @@ module.exports = function(env) {
                 test: /\.js$|\.css$|\.html$/,
                 threshold: 0,
                 minRatio: 0.9,
-                deleteOriginalAssets: true
+                deleteOriginalAssets: false
             }),
             new HtmlWebpackPlugin({
                 inject: false,
                 template: './template/index.ejs',
                 appMountId: 'app',
-                title: 'jb webpack',
+                title: 'Portfolio of Johnny Bell',
                 mobile: true,
                 hash: false,
                 minify: {
