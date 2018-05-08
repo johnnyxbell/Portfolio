@@ -4,14 +4,11 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SystemBellPlugin = require('system-bell-webpack-plugin');
 const NyanProgressPlugin = require('nyan-progress-webpack-plugin');
-const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const PACKAGE = require('./package.json');
-const FlowBabelWebpackPlugin = require('flow-babel-webpack-plugin');
 
 const sourcePath = path.join(__dirname, './src');
 const staticsPath = path.join(__dirname, './build');
@@ -115,15 +112,11 @@ module.exports = function(env) {
                     reload: true
                 }
             ),
-            new CaseSensitivePathsPlugin(),
-            new FriendlyErrorsWebpackPlugin(),
             new SystemBellPlugin(),
             new NyanProgressPlugin(),
-            new DuplicatePackageCheckerPlugin(),
             new StyleLintPlugin({
                 files: './app/assets/scss/**/*.scss'
-            }),
-            new FlowBabelWebpackPlugin()
+            })
         );
     }
 
@@ -131,7 +124,7 @@ module.exports = function(env) {
         devtool: isProd ? 'hidden-source-map' : 'eval',
         context: sourcePath,
         entry: {
-            js: 'app.js',
+            js: 'app.jsx',
             vendor: ['react']
         },
         output: {
