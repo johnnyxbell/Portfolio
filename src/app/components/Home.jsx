@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import backgroundImage from '../assets/images/bg.jpg';
 
-const HomePage = styled.div`
+const HomePanel = styled.div`
     position: relative;
     background: url(${backgroundImage}) no-repeat center center fixed; ;
     background-size: cover;
@@ -13,9 +13,9 @@ class Home extends React.Component {
 
     render() {
         return (
-            <HomePage>
+            <HomePanel>
                 Home
-            </HomePage>
+            </HomePanel>
         );
     }
 }
