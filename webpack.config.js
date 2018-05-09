@@ -64,9 +64,10 @@ module.exports = function(env) {
                 inject: false,
                 template: './template/index.ejs',
                 appMountId: 'app',
-                title: 'Portfolio of Johnny Bell',
+                title: 'Johnny Bell Portfolio - Frontend Engineer',
                 mobile: true,
                 hash: false,
+                favicon: './app/assets/images/favicon.ico',
                 minify: {
                     collapseWhitespace: true,
                     preserveLineBreaks: false

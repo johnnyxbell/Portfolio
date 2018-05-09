@@ -11,7 +11,7 @@ const HomePanel = styled.div`
 `;
 
 const Bio = styled.div`
-    max-width: 900px;
+    max-width: 800px;
     position: absolute;
     left: 0;
     right: 0;
@@ -32,7 +32,7 @@ const ProfilePic = styled.img`
 const BioText = styled.p`
     color: #ccc;
     text-align: center;
-    font-size: 3.3rem;
+    font-size: 2.8rem;
     font-weight: 300;
     margin: 20px;
     padding: 0;

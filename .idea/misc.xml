@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="FLOW" />
+  </component>
+  <component name="MagicentoSettings">
+    <option name="pathToMage" value="$PROJECT_DIR$/../../wolf/vagrant-ghlilley.com.au/www/app/Mage.php" />
+    <option name="pathToPhp" value="" />
+    <option name="urlToMagento" value="" />
+    <option name="packages" value="" />
+    <option name="themes" value="" />
+    <option name="basicAuthUsername" value="" />
+    <option name="basicAuthPassword" value="" />
+    <option name="pathsToMagentoSerialized" value="$PROJECT_DIR$/../../wolf/vagrant-ghlilley.com.au/www" />
+  </component>
+</project>
