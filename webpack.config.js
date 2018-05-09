@@ -114,10 +114,7 @@ module.exports = function(env) {
                 }
             ),
             new SystemBellPlugin(),
-            new NyanProgressPlugin(),
-            new StyleLintPlugin({
-                files: './app/assets/scss/**/*.scss'
-            })
+            new NyanProgressPlugin()
         );
     }
 
