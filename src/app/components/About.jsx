@@ -13,7 +13,10 @@ const AboutInfo = styled.div`
     background: #f8f8f8;
     color: #333f4c;
     font-size: 25px;
-    padding: 25px 0;
+    padding: 50px 0;
+    @media (max-width: 1200px) and (min-width: 376px) {
+        padding: 50px;
+    }
     position: relative;
     a {
         transition: opacity 0.5s ease;
@@ -31,6 +34,9 @@ const AboutInfo = styled.div`
 const AboutInfoCurrent = styled.div`
     color: #333f4c;
     font-size: 25px;
+    @media (max-width: 769px) and (min-width: 376px) {
+        font-size: 18px;
+    }
     padding: 50px 0;
     position: relative;
     &:before {
@@ -56,6 +62,9 @@ const AboutInfoCurrent = styled.div`
 const AboutInfoPast = styled.div`
     color: #333f4c;
     font-size: 22px;
+    @media (max-width: 769px) and (min-width: 376px) {
+        font-size: 18px;
+    }
     padding: 13px 0 50px 0;
     position: relative;
     line-height: 30px;
@@ -73,6 +82,9 @@ const AboutInfoPast = styled.div`
 const Skills = styled.div`
     color: #333f4c;
     font-size: 22px;
+    @media (max-width: 769px) and (min-width: 376px) {
+        font-size: 18px;
+    }
     padding: 13px 0 50px 0;
     position: relative;
     line-height: 30px;
@@ -101,6 +113,9 @@ const SkillsLi = styled.li`
     margin-bottom: 10px;
     margin-right: 10px;
     font-size: 16px;
+    @media (max-width: 769px) and (min-width: 376px) {
+        font-size: 14px;
+    }
     transition: background 0.3s ease;
     &:hover {
         background: #333f4c;
@@ -140,8 +155,11 @@ class About extends React.Component {
             <AboutPanel>
                 <AboutInfo>
                     <AboutInfoCurrent>
-                        Currently working at <a href="http://doctor.com">Doctor.com</a> in{' '}
-                        <strong>Cupertino, CA</strong>.
+                        Currently working at{' '}
+                        <a href="http://doctor.com" target="_blank" rel="noopener noreferrer">
+                            Doctor.com
+                        </a>{' '}
+                        in <strong>Cupertino, CA</strong>.
                     </AboutInfoCurrent>
                     <AboutInfoPast>
                         Hey there, I've been coding the internet for the past 10 years, working all over the world, but
