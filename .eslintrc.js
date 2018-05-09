@@ -23,7 +23,7 @@ module.exports = {
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
         'no-var': 'error',
-       // 'no-unused-vars': 'error',
+        'no-unused-vars': 'error',
         'comma-dangle': ['error', 'never'],
         eqeqeq: ['error', 'always'],
         'no-multiple-empty-lines': [2, { max: 1 }],
