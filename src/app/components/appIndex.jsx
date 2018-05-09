@@ -2,7 +2,6 @@ import React from 'react';
 import 'typeface-gudea';
 import Home from './Home';
 import About from './About';
-import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 
@@ -16,15 +15,13 @@ injectGlobal`
 `;
 
 class AppIndex extends React.Component {
-
     render() {
         return (
             <div>
-                <Home/>
-                <About/>
-                <Skills/>
-                <Portfolio/>
-                <Contact/>
+                <Home />
+                <About />
+                <Portfolio />
+                <Contact />
             </div>
         );
     }

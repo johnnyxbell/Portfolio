@@ -100,7 +100,7 @@ module.exports = function(env) {
                 // BrowserSync options
                 {
                     host: 'localhost',
-                    port: 8080,
+                    port: 3030,
                     open: false,
                     // proxy the Webpack Dev Server endpoint
                     // (which should be serving on http://localhost:8080/)
@@ -250,7 +250,7 @@ module.exports = function(env) {
         devServer: {
             contentBase: './src',
             historyApiFallback: true,
-            port: 8080,
+            port: 3030,
             compress: isProd,
             inline: !isProd,
             hot: false,

@@ -1,18 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faLinkedinIn from '@fortawesome/fontawesome-free-brands/faLinkedinIn';
-import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
-import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
-import faRss from '@fortawesome/fontawesome-free-solid/faRss';
 import backgroundImage from '../assets/images/bg.jpg';
 import Profile from '../assets/images/profile.jpg';
+import Social from './Social';
 
 const HomePanel = styled.div`
     position: relative;
-    background: url(${backgroundImage}) no-repeat center center fixed; ;
+    background: url(${backgroundImage}) no-repeat center center fixed;
     background-size: cover;
-    height:100vh;
+    height: 100vh;
+`;
+
+const SocialPanel = styled.div`
+    position: absolute;
+    top: 20px;
+    right: 20px;
 `;
 
 const Bio = styled.div`
@@ -24,16 +26,6 @@ const Bio = styled.div`
     transform: translateY(-50%);
     margin: 0 auto;
     text-align: center;
-    a svg {
-    transition: color 0.5s ease;
-        color:#ccc;
-        padding-right: 10px;
-        height:25px;
-        width:25px!important;
-    }
-    a:hover svg {
-        color:white;
-    }
 `;
 
 const ProfilePic = styled.img`
@@ -52,24 +44,24 @@ const BioText = styled.p`
     margin: 20px;
     padding: 0;
     strong {
-      color: white;
+        color: white;
     }
 `;
 
 class Home extends React.Component {
-
     render() {
         return (
             <HomePanel>
+                <SocialPanel>
+                    <Social />
+                </SocialPanel>
                 <Bio>
-                    <ProfilePic src={Profile} alt='Johnny Bell Profile Pic' />
+                    <ProfilePic src={Profile} alt="Johnny Bell Profile Pic" />
                     <BioText>
-                    Hi, I'm Johnny Bell, a 31 year old <strong>frontend engineer</strong> from <strong>Australia.</strong> Working with the awesome team at <strong>Doctor.com</strong> in <strong>Silicon Valley</strong>.
+                        Hi, I'm Johnny Bell, a 31 year old <strong>frontend engineer</strong> from{' '}
+                        <strong>Australia.</strong> Working with the awesome team at <strong>Doctor.com</strong> in{' '}
+                        <strong>Silicon Valley</strong>.
                     </BioText>
-                    <a href="https://www.linkedin.com/in/johnnyxbell/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                    <a href="https://www.github.com/johnnyxbell/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-                    <a href="https://www.twitter.com/johnnyxbell/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} /></a>
-                    <a href="https://blog.johnnybell.io" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faRss} /></a>
                 </Bio>
             </HomePanel>
         );
