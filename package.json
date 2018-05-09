@@ -4,7 +4,7 @@
   "description": "Doctor.com Admin",
   "main": "index.js",
   "scripts": {
-    "watch": "yarn install && nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
+    "watch": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
     "kill": "killall -9 node",
     "build": "rm -rf build && NODE_ENV=production webpack --env.prod=true",
     "flow": "flow; test $? -eq 0 -o $? -eq 2"
@@ -56,6 +56,11 @@
     "webpack-dev-server": "2.4.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.7",
+    "@fortawesome/fontawesome-free-brands": "^5.0.12",
+    "@fortawesome/fontawesome-free-regular": "^5.0.12",
+    "@fortawesome/fontawesome-free-solid": "^5.0.12",
+    "@fortawesome/react-fontawesome": "^0.0.19",
     "babel": "^6.23.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-polyfill": "^6.26.0",
