@@ -1,8 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faAngleDown from '@fortawesome/fontawesome-free-solid/faAngleDown';
 import backgroundImage from '../assets/images/bg.jpg';
 import Profile from '../assets/images/profile.jpg';
 import Social from './Social';
+
+const Bounce = keyframes`
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-15px);}
+  60% {transform: translateY(-7px);}
+
+`;
 
 const HomePanel = styled.div`
     position: relative;
@@ -48,6 +57,22 @@ const BioText = styled.p`
     }
 `;
 
+const ScrollDown = styled.div`
+    svg {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -1rem;
+        transform: translate(-50%);
+        color: #fff;
+        font-size: 2rem;
+        opacity: 0.3;
+        height: 35px !important;
+        width: 35px !important;
+        animation: ${Bounce} 2s infinite;
+    }
+`;
+
 class Home extends React.Component {
     render() {
         return (
@@ -63,6 +88,9 @@ class Home extends React.Component {
                         <strong>Silicon Valley</strong>.
                     </BioText>
                 </Bio>
+                <ScrollDown>
+                    <FontAwesomeIcon icon={faAngleDown} />
+                </ScrollDown>
             </HomePanel>
         );
     }
