@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/src/app/assets/scss/_variables.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/assets/scss/mixins/_breakpoints.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/assets/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/About.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -21,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
@@ -69,6 +70,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="About.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/components/About.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="166" column="98" selection-start-line="166" selection-start-column="98" selection-end-line="166" selection-end-column="98" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="app.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,6 +122,7 @@
         <option value="$PROJECT_DIR$/src/app/components/Home.jsx" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/app/components/About.jsx" />
       </list>
     </option>
   </component>
@@ -173,6 +187,13 @@
               <item name="Portfolio-v2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Portfolio-v2" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Portfolio-v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Portfolio-v2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -226,12 +247,12 @@
       <option name="presentableId" value="Default" />
       <updated>1525837753366</updated>
       <workItem from="1525837755016" duration="4493000" />
-      <workItem from="1525842981676" duration="1688000" />
+      <workItem from="1525842981676" duration="2211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6181000" />
+    <option name="totallyTimeSpent" value="6704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -339,16 +360,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/Home.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/assets/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -376,6 +387,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/Home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/About.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="166" column="98" selection-start-line="166" selection-start-column="98" selection-end-line="166" selection-end-column="98" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

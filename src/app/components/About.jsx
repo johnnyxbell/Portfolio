@@ -164,7 +164,7 @@ class About extends React.Component {
                     <AboutInfoPast>
                         Hey there, I've been coding the internet for the past 10 years, working all over the world, but
                         am now happy to call the Bay Area home. Over that time I've managed people, been a tech lead,
-                        and am now loving being an individual contributor. <br /> In the past I've I've worked for{' '}
+                        and am now loving being an individual contributor. <br /> In the past I've worked for{' '}
                         <a href="http://www.officeworks.com.au/" target="_blank" rel="noopener noreferrer">
                             Officeworks
                         </a>,{' '}
