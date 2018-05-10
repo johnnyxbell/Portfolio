@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import Social from './Social';
+import ContactBg from '../assets/images/contactusbg.jpg';
 
 const ContactPanel = styled.div`
-    min-height: 250px;
-    background: #1f3237;
-   // background: #f8f8f8;
+    position: relative;
+    background: url(${ContactBg}) no-repeat center center fixed;
+    background-size: cover;
+    width:100vw;
     color: #333f4c;
     font-size: 25px;
     padding: 50px 0;
