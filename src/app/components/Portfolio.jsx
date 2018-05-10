@@ -62,22 +62,34 @@ class Portfolio extends React.Component {
             <PortfolioPanel>
                 <PortfolioItems>
                     <PortfolioItem>
-                        <img src={Nike} alt="Nike Store Australia" />
+                        <a href="http://nikestore.com.au" target="_blank" rel="noopener noreferrer">
+                            <img src={Nike} alt="Nike Store Australia" />{' '}
+                        </a>
                     </PortfolioItem>
                     <PortfolioItem>
-                        <img src={Sassandbide} alt="Sass and Bide Worldwide" />
+                        <a href="http://sassandbide.com.au" target="_blank" rel="noopener noreferrer">
+                            <img src={Sassandbide} alt="Sass and Bide Worldwide" />
+                        </a>
                     </PortfolioItem>
                     <PortfolioItem>
-                        <img src={SportsGirl} alt="Sportsgirl Australia" />
+                        <a href="http://sportsgirl.com.au" target="_blank" rel="noopener noreferrer">
+                            <img src={SportsGirl} alt="Sportsgirl Australia" />
+                        </a>
                     </PortfolioItem>
                     <PortfolioItem>
-                        <img src={Sussan} alt="Susan Australia" />
+                        <a href="http://sussan.com.au" target="_blank" rel="noopener noreferrer">
+                            <img src={Sussan} alt="Susan Australia" />
+                        </a>
                     </PortfolioItem>
                     <PortfolioItem>
-                        <img src={FoyerLive} alt="Foyerlive WorldWide" />
+                        <a href="http://foyer.live" target="_blank" rel="noopener noreferrer">
+                            <img src={FoyerLive} alt="Foyerlive WorldWide" />
+                        </a>
                     </PortfolioItem>
                     <PortfolioItem>
-                        <img src={MakePeaceIsland} alt="Makepeace Island" />
+                        <a href="http://makepeaceisland.com" target="_blank" rel="noopener noreferrer">
+                            <img src={MakePeaceIsland} alt="Makepeace Island" />
+                        </a>
                     </PortfolioItem>
                 </PortfolioItems>
             </PortfolioPanel>

@@ -68,8 +68,8 @@ class Contact extends React.Component {
                         <a href="mailto:hi@johnnybell.io">hi@johnnybell.io</a>
                     </p>
                     <p>
-                        +61 438 326 315 (AUS)<br />
-                        +1 415 937 3187 (USA)
+                        +1 415 937 3187 🇺🇸<br />
+                        +61 438 326 315 🇦🇺
                     </p>
                     <Social />
                 </ContactInfo>
