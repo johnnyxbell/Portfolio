@@ -1,16 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import AboutBg from '../assets/images/aboutusbg.jpg';
 
 const AboutPanel = styled.div`
+    position: relative;
+    background: url(${AboutBg}) no-repeat center center fixed;
+    background-size: cover;
+    width:100vw;
     min-height: 250px;
-    background: #f8f8f8;
 `;
 
 const AboutInfo = styled.div`
     min-height: 250px;
     max-width: 1200px;
     margin: 0 auto;
-    background: #f8f8f8;
     color: #333f4c;
     font-size: 25px;
     padding: 50px 0;
