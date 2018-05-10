@@ -27,11 +27,11 @@ class Social extends React.Component {
                 <a href="https://www.linkedin.com/in/johnnyxbell/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
-                <a href="https://www.github.com/johnnyxbell/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faGithub} />
-                </a>
                 <a href="https://angel.co/johnnyxbell" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faAngelList} />
+                </a>
+                <a href="https://www.github.com/johnnyxbell/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a href="https://www.twitter.com/johnnyxbell/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faTwitter} />
