@@ -9,6 +9,7 @@ const SystemBellPlugin = require('system-bell-webpack-plugin');
 const NyanProgressPlugin = require('nyan-progress-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const PACKAGE = require('./package.json');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const sourcePath = path.join(__dirname, './src');
 const staticsPath = path.join(__dirname, './build');
@@ -52,6 +53,9 @@ module.exports = function(env) {
                     comments: false
                 }
             }),
+            new CopyWebpackPlugin([
+                {from:'./template/_redirects'}
+            ]),
             new CompressionPlugin({
                 asset: '[path].gz[query]',
                 algorithm: 'gzip',
@@ -100,12 +104,12 @@ module.exports = function(env) {
                 // BrowserSync options
                 {
                     host: 'localhost',
-                    port: 3030,
+                    port: 2837,
                     open: false,
                     // proxy the Webpack Dev Server endpoint
                     // (which should be serving on http://localhost:8080/)
                     // through BrowserSync
-                    proxy: 'http://localhost:8080/',
+                    proxy: 'http://localhost:2837/',
                     logPrefix: 'JB'
                 },
                 // plugin options
@@ -250,7 +254,7 @@ module.exports = function(env) {
         devServer: {
             contentBase: './src',
             historyApiFallback: true,
-            port: 3030,
+            port: 2837,
             compress: isProd,
             inline: !isProd,
             hot: false,
