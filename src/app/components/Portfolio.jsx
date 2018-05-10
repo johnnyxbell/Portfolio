@@ -40,7 +40,7 @@ const PortfolioItem = styled.div`
         flex-basis: 48%;
     }
 
-    @media (max-width: 414px) and (min-width: 376px) {
+    @media (max-width: 414px) and (min-width: 374px) {
         flex-basis: 98%;
     }
     img {
