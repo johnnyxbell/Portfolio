@@ -18,6 +18,7 @@ const HomePanel = styled.div`
     background: url(${backgroundImage}) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
+    width: 100vw;
 `;
 
 const SocialPanel = styled.div`
