@@ -6,11 +6,10 @@ import SportsGirl from '../assets/images/sportsgirl.jpg';
 import Sussan from '../assets/images/sussan.jpg';
 import ScanTool from '../assets/images/scantool.jpg';
 import ScanToolVid from '../assets/videoes/scantool.mp4';
-import MakePeaceIsland from '../assets/images/makepeaceisland.jpg';
+import ddc from '../assets/images/ddc.jpg';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faReact from '@fortawesome/fontawesome-free-brands/faReact';
 import faMagento from '@fortawesome/fontawesome-free-brands/faMagento';
-import faWordpress from '@fortawesome/fontawesome-free-brands/faWordpress';
 
 const PortfolioPanel = styled.div`
     min-height: 250px;
@@ -88,6 +87,10 @@ class Portfolio extends React.Component {
                         <FontAwesomeIcon icon={faReact} color="#61dafb" />
                     </PortfolioItem>
                     <PortfolioItem>
+                        <img src={ddc} alt="Doctor.com" />
+                        <FontAwesomeIcon icon={faReact} color="#61dafb" />
+                    </PortfolioItem>
+                    <PortfolioItem>
                         <a href="http://nikestore.com.au" target="_blank" rel="noopener noreferrer">
                             <img src={Nike} alt="Nike Store Australia" />{' '}
                         </a>
@@ -110,12 +113,6 @@ class Portfolio extends React.Component {
                             <img src={Sussan} alt="Susan Australia" />
                         </a>
                         <FontAwesomeIcon icon={faMagento} color="#f26322" />
-                    </PortfolioItem>
-                    <PortfolioItem>
-                        <a href="http://makepeaceisland.com" target="_blank" rel="noopener noreferrer">
-                            <img src={MakePeaceIsland} alt="Makepeace Island" />
-                        </a>
-                        <FontAwesomeIcon icon={faWordpress} color="#21759b" />
                     </PortfolioItem>
                 </PortfolioItems>
             </PortfolioPanel>
