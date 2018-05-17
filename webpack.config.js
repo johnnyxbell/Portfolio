@@ -197,7 +197,7 @@ module.exports = function(env) {
                     ]
                 },
                 {
-                    test: /\.(png|jpg)$/,
+                    test: /\.(png|jpg|mp4)$/,
                     exclude: /node_modules/,
                     use: [
                         {
