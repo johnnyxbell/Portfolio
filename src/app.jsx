@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'whatwg-fetch';
 import 'babel-polyfill';
+/*eslint-disable*/
+import Styles from './app/assets/css/styles.css';
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-73328361-1');
 ReactGA.pageview(window.location.pathname + window.location.search);

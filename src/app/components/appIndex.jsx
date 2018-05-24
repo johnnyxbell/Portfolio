@@ -1,5 +1,4 @@
 import React from 'react';
-import 'typeface-gudea';
 import Home from './Home';
 import About from './About';
 import Portfolio from './Portfolio';

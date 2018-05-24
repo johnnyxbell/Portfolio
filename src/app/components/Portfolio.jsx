@@ -5,7 +5,7 @@ import Sassandbide from '../assets/images/sassandbide.jpg';
 import SportsGirl from '../assets/images/sportsgirl.jpg';
 import Sussan from '../assets/images/sussan.jpg';
 import ScanTool from '../assets/images/scantool.jpg';
-import ScanToolVid from '../assets/videoes/scantool.mp4';
+//import ScanToolVid from '../assets/videoes/scantool.mp4';
 import ddc from '../assets/images/ddc.jpg';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faReact from '@fortawesome/fontawesome-free-brands/faReact';
@@ -80,14 +80,14 @@ class Portfolio extends React.Component {
             <PortfolioPanel>
                 <PortfolioItems>
                     <PortfolioItem>
-                        <img src={ScanTool} alt="Scantool Doctor.com" />
-                        <video width="640" height="388" autoPlay loop>
-                            <source src={ScanToolVid} type="video/mp4" />
-                        </video>
+                        <img src={ddc} alt="Doctor.com" />
                         <FontAwesomeIcon icon={faReact} color="#61dafb" />
                     </PortfolioItem>
                     <PortfolioItem>
-                        <img src={ddc} alt="Doctor.com" />
+                        <img src={ScanTool} alt="Scantool Doctor.com" />
+                        {/*<video width="640" height="388" autoPlay loop>*/}
+                        {/*<source src={ScanToolVid} type="video/mp4" />*/}
+                        {/*</video>*/}
                         <FontAwesomeIcon icon={faReact} color="#61dafb" />
                     </PortfolioItem>
                     <PortfolioItem>
