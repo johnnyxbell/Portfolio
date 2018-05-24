@@ -6,6 +6,7 @@ import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
 import faAngelList from '@fortawesome/fontawesome-free-brands/faAngellist';
 import faRss from '@fortawesome/fontawesome-free-solid/faRss';
+import faStackOverflow from '@fortawesome/fontawesome-free-brands/faStackOverflow';
 
 const SocialPanel = styled.div`
     a svg {
@@ -32,6 +33,9 @@ class Social extends React.Component {
                 </a>
                 <a href="https://www.github.com/johnnyxbell/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a href="https://stackoverflow.com/story/johnnyxbell" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faStackOverflow} />
                 </a>
                 <a href="https://www.twitter.com/johnnyxbell/" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faTwitter} />
