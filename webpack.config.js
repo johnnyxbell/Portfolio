@@ -71,7 +71,7 @@ module.exports = function(env) {
                 title: 'Johnny Bell Portfolio - Frontend Engineer',
                 mobile: true,
                 gzipcss: false,
-                gzipjs: true,
+                gzipjs: false,
                 hash: false,
                 favicon: './app/assets/images/favicon.ico',
                 minify: {
