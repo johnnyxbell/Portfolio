@@ -6,7 +6,7 @@ import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
 import faAngelList from '@fortawesome/fontawesome-free-brands/faAngellist';
 import faRss from '@fortawesome/fontawesome-free-solid/faCloudUploadAlt';
-import faStackOverflow from '@fortawesome/fontawesome-free-brands/facl';
+import faStackOverflow from '@fortawesome/fontawesome-free-brands/faStackOverflow';
 
 const SocialPanel = styled.div`
     a svg {
