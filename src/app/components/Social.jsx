@@ -5,7 +5,7 @@ import faLinkedinIn from '@fortawesome/fontawesome-free-brands/faLinkedinIn';
 import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
 import faAngelList from '@fortawesome/fontawesome-free-brands/faAngellist';
-import faRss from '@fortawesome/fontawesome-free-solid/faCloudUploadAlt';
+import faRss from '@fortawesome/fontawesome-free-solid/faRss';
 import faStackOverflow from '@fortawesome/fontawesome-free-brands/faStackOverflow';
 
 const SocialPanel = styled.div`
