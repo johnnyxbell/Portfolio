@@ -134,6 +134,7 @@ class About extends React.Component {
             'Redux',
             'Webpack',
             'Styled Components',
+            'GraphQL',
             'Node',
             'Express',
             'Babel',
@@ -150,7 +151,8 @@ class About extends React.Component {
             'E Commerce',
             'Skateboarding',
             'Watching Hockey',
-            'Going to Gigs'
+            'Going to Gigs',
+            '... Plus many more'
         ];
         const listMySkills = mySkills.map(mySkills => <SkillsLi key={mySkills}>{mySkills}</SkillsLi>);
 
