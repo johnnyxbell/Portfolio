@@ -168,6 +168,10 @@ class About extends React.Component {
                         Hey there, I've been coding the internet for the past 10 years, working all over the world, but
                         am now happy to call the Bay Area home. Over that time I've managed people, been a tech lead,
                         and am now loving being an individual contributor. <br /> In the past I've worked for{' '}
+                        <a href="http://foyerlive.com" target="_blank" rel="noopener noreferrer">
+                            FoyerLive
+                        </a>{' '}
+                        in <strong>San Francisco CA</strong>, &amp; {' '}
                         <a href="http://www.officeworks.com.au/" target="_blank" rel="noopener noreferrer">
                             Officeworks
                         </a>,{' '}
@@ -177,11 +181,7 @@ class About extends React.Component {
                         <a href="http://ie.com.au/" target="_blank" rel="noopener noreferrer">
                             IE Digital
                         </a>{' '}
-                        in <strong>Melbourne AU</strong>, &amp;{' '}
-                        <a href="http://foyerlive.com" target="_blank" rel="noopener noreferrer">
-                            FoyerLive
-                        </a>{' '}
-                        in <strong>San Francisco, CA.</strong>
+                        in <strong>Melbourne AU</strong>.
                     </AboutInfoPast>
                     <Skills>
                         My skills include:
