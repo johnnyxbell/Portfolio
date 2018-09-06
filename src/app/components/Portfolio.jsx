@@ -5,7 +5,6 @@ import Sassandbide from '../assets/images/sassandbide.jpg';
 import SportsGirl from '../assets/images/sportsgirl.jpg';
 import Sussan from '../assets/images/sussan.jpg';
 import ScanTool from '../assets/images/scantool.jpg';
-//import ScanToolVid from '../assets/videoes/scantool.mp4';
 import ddc from '../assets/images/ddc.jpg';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faReact from '@fortawesome/fontawesome-free-brands/faReact';
@@ -47,7 +46,6 @@ const PortfolioItem = styled.div`
         right: 4%;
         width: 35px !important;
         height: 35px !important;
-        //color: #61dafb;
     }
     video {
         position: absolute;
@@ -80,14 +78,15 @@ class Portfolio extends React.Component {
             <PortfolioPanel>
                 <PortfolioItems>
                     <PortfolioItem>
-                        <img src={ddc} alt="Doctor.com" />
+                        <a href ="https://www.doctor.com/solutions/universal-scheduling" target="_blank" rel="noopener noreferrer">
+                            <img src={ddc} alt="Doctor.com" />
+                        </a>
                         <FontAwesomeIcon icon={faReact} color="#61dafb" />
                     </PortfolioItem>
                     <PortfolioItem>
-                        <img src={ScanTool} alt="Scantool Doctor.com" />
-                        {/*<video width="640" height="388" autoPlay loop>*/}
-                        {/*<source src={ScanToolVid} type="video/mp4" />*/}
-                        {/*</video>*/}
+                        <a href="https://www.doctor.com/scan-v3" target="_blank" rel="noopener noreferrer">
+                            <img src={ScanTool} alt="Scantool Doctor.com" />
+                        </a>
                         <FontAwesomeIcon icon={faReact} color="#61dafb" />
                     </PortfolioItem>
                     <PortfolioItem>
