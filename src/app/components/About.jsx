@@ -1,6 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import AboutBg from '../assets/images/aboutusbg.jpg';
+import ReactLogo from '../assets/images/tech/react.png';
+import ReduxLogo from '../assets/images/tech/redux.png';
+import WebpackLogo from '../assets/images/tech/webpack.png';
+import GraphQLlogo from '../assets/images/tech/graphql.png';
+import ApolloLogo from '../assets/images/tech/apollo.png';
+import StyledLogo from '../assets/images/tech/styled.png';
+import NodeLogo from '../assets/images/tech/node.png';
+import BabelLogo from '../assets/images/tech/babel.png';
+import FlowLogo from '../assets/images/tech/flow.png';
+import JestLogo from '../assets/images/tech/jest.png';
+import YarnLogo from '../assets/images/tech/yarn.png';
+import AngularLogo from '../assets/images/tech/angular.png';
+import JSLogo from '../assets/images/tech/js.png';
+import SassLogo from '../assets/images/tech/sass.png';
+import GitLogo from '../assets/images/tech/git.png';
 
 const AboutPanel = styled.div`
     position: relative;
@@ -185,6 +200,26 @@ class About extends React.Component {
                         </a>{' '}
                         in <strong>Melbourne AU</strong>.
                     </AboutInfoPast>
+                    <Skills>
+                        Tech Used:
+                        <p>
+                            <img src={JSLogo} width="50px" alt='Javascript logo'/>
+                            <img src={ReactLogo} width="50px" alt='React logo'/>
+                            <img src={ReduxLogo} width="50px" alt='Redux logo'/>
+                            <img src={WebpackLogo} width="50px" alt='Webpack logo'/>
+                            <img src={GraphQLlogo} width="50px" alt='GraphQL logo'/>
+                            <img src={ApolloLogo} width="50px" alt='Apollo logo'/>
+                            <img src={StyledLogo} width="50px" alt='Styled Components logo'/>
+                            <img src={NodeLogo} width="50px" alt='Node logo'/>
+                            <img src={BabelLogo} width="50px" alt='babel logo'/>
+                            <img src={FlowLogo} width="50px" alt='Flow logo'/>
+                            <img src={JestLogo} width="50px" alt='Jest logo'/>
+                            <img src={YarnLogo} width="50px" alt='Yarn logo'/>
+                            <img src={AngularLogo} width="50px" alt='Angular logo'/>
+                            <img src={SassLogo} width="50px" alt='Sass logo'/>
+                            <img src={GitLogo} width="50px" alt='Git logo'/>
+                        </p>
+                    </Skills>
                     <Skills>
                         My skills include:
                         <SkillsUl>{listMySkills}</SkillsUl>
