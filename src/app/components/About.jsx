@@ -164,16 +164,16 @@ class About extends React.Component {
                         in <strong>San Francisco, California</strong>.
                     </AboutInfoCurrent>
                     <AboutInfoPast>
-                        I've been coding the internet for the past 10 years; working all over the world but
-                        am now happy to call the Bay Area home. <br /> Over that time I've managed people, been a tech lead,
-                        and am now loving being an individual contributor. <br /> In the past I've worked for{' '}
+                        I've been coding the internet for the past 10 years and working all over the world. 
+                        Over that time, I’ve managed people, been a tech lead; now, I love being an individual 
+                        contributor and calling the Bay Area home! <br /> In the past I've worked for{' '}
                         <a href="http://doctor.com" target="_blank" rel="noopener noreferrer">
                             Doctor.com
-                        </a>{' '} &amp; {' '}
+                        </a>{' '} and {' '}
                         <a href="http://foyerlive.com" target="_blank" rel="noopener noreferrer">
                             FoyerLive
                         </a>{' '}
-                        in <strong>San Francisco CA</strong>. {' '}
+                        in <strong>San Francisco CA</strong>, as well as{' '}
                         <a href="http://www.officeworks.com.au/" target="_blank" rel="noopener noreferrer">
                             Officeworks
                         </a>,{' '}
