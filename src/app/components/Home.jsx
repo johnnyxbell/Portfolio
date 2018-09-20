@@ -90,9 +90,9 @@ class Home extends React.Component {
                 <Bio>
                     <ProfilePic src={Profile} alt="Johnny Bell Profile Pic" />
                     <BioText>
-                        Hi, I'm Johnny Bell, <br />a <strong>frontend engineer</strong> from{' '}
-                        <strong>Australia.</strong> Working with the awesome team at <strong>Doctor.com</strong> in{' '}
-                        <strong>Silicon Valley</strong>.
+                        G’day mates, I’m Johnny 👋🏻 <br />a <strong>frontend engineer</strong> from{' '}
+                        <strong>Australia.</strong> Working with the awesome team at <strong>Stackshare</strong> in{' '}
+                        <strong>San Francisco</strong>.
                     </BioText>
                 </Bio>
                 <ScrollDown>

@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import AboutBg from '../assets/images/aboutusbg.jpg';
 
 const ContactPanel = styled.div`
     min-height: 190px;
-    background: url(${AboutBg}) no-repeat center center fixed;
     color: #333f4c;
     font-size: 25px;
     padding: 50px 0;

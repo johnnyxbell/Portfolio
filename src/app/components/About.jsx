@@ -1,21 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import AboutBg from '../assets/images/aboutusbg.jpg';
-import ReactLogo from '../assets/images/tech/react.png';
-import ReduxLogo from '../assets/images/tech/redux.png';
-import WebpackLogo from '../assets/images/tech/webpack.png';
-import GraphQLlogo from '../assets/images/tech/graphql.png';
-import ApolloLogo from '../assets/images/tech/apollo.png';
-import StyledLogo from '../assets/images/tech/styled.png';
-import NodeLogo from '../assets/images/tech/node.png';
-import BabelLogo from '../assets/images/tech/babel.png';
-import FlowLogo from '../assets/images/tech/flow.png';
-import JestLogo from '../assets/images/tech/jest.png';
-import YarnLogo from '../assets/images/tech/yarn.png';
-import AngularLogo from '../assets/images/tech/angular.png';
-import JSLogo from '../assets/images/tech/js.png';
-import SassLogo from '../assets/images/tech/sass.png';
-import GitLogo from '../assets/images/tech/git.png';
 
 const AboutPanel = styled.div`
     position: relative;
@@ -163,10 +148,7 @@ class About extends React.Component {
             'GIT',
             'JSON',
             'Responsive',
-            'E Commerce',
-            'Skateboarding',
-            'Watching Hockey',
-            'Going to Gigs',
+            'e-commerce',
             '... Plus many more'
         ];
         const listMySkills = mySkills.map(mySkills => <SkillsLi key={mySkills}>{mySkills}</SkillsLi>);
@@ -176,19 +158,22 @@ class About extends React.Component {
                 <AboutInfo>
                     <AboutInfoCurrent>
                         Currently working at{' '}
-                        <a href="http://doctor.com" target="_blank" rel="noopener noreferrer">
-                            Doctor.com
+                        <a href="http://stackshare.io" target="_blank" rel="noopener noreferrer">
+                            Stackshare
                         </a>{' '}
-                        in <strong>Cupertino, CA</strong>.
+                        in <strong>San Francisco, California</strong>.
                     </AboutInfoCurrent>
                     <AboutInfoPast>
-                        Hey there, I've been coding the internet for the past 10 years, working all over the world, but
-                        am now happy to call the Bay Area home. Over that time I've managed people, been a tech lead,
+                        I've been coding the internet for the past 10 years; working all over the world but
+                        am now happy to call the Bay Area home. <br /> Over that time I've managed people, been a tech lead,
                         and am now loving being an individual contributor. <br /> In the past I've worked for{' '}
+                        <a href="http://doctor.com" target="_blank" rel="noopener noreferrer">
+                            Doctor.com
+                        </a>{' '} &amp; {' '}
                         <a href="http://foyerlive.com" target="_blank" rel="noopener noreferrer">
                             FoyerLive
                         </a>{' '}
-                        in <strong>San Francisco CA</strong>, &amp; {' '}
+                        in <strong>San Francisco CA</strong>. {' '}
                         <a href="http://www.officeworks.com.au/" target="_blank" rel="noopener noreferrer">
                             Officeworks
                         </a>,{' '}
@@ -199,27 +184,10 @@ class About extends React.Component {
                             IE Digital
                         </a>{' '}
                         in <strong>Melbourne AU</strong>.
-                    </AboutInfoPast>
-                    <Skills>
-                        Tech Used:
                         <p>
-                            <img src={JSLogo} width="50px" alt='Javascript logo'/>
-                            <img src={ReactLogo} width="50px" alt='React logo'/>
-                            <img src={ReduxLogo} width="50px" alt='Redux logo'/>
-                            <img src={WebpackLogo} width="50px" alt='Webpack logo'/>
-                            <img src={GraphQLlogo} width="50px" alt='GraphQL logo'/>
-                            <img src={ApolloLogo} width="50px" alt='Apollo logo'/>
-                            <img src={StyledLogo} width="50px" alt='Styled Components logo'/>
-                            <img src={NodeLogo} width="50px" alt='Node logo'/>
-                            <img src={BabelLogo} width="50px" alt='babel logo'/>
-                            <img src={FlowLogo} width="50px" alt='Flow logo'/>
-                            <img src={JestLogo} width="50px" alt='Jest logo'/>
-                            <img src={YarnLogo} width="50px" alt='Yarn logo'/>
-                            <img src={AngularLogo} width="50px" alt='Angular logo'/>
-                            <img src={SassLogo} width="50px" alt='Sass logo'/>
-                            <img src={GitLogo} width="50px" alt='Git logo'/>
+                        Outside of technology, I like skateboarding, going to concerts, hiking, relaxing with my other half, discovering new areas around the US, tasting new craft beers, and annoying my girlfriend by getting more tattoos.
                         </p>
-                    </Skills>
+                    </AboutInfoPast>
                     <Skills>
                         My skills include:
                         <SkillsUl>{listMySkills}</SkillsUl>
