@@ -17,7 +17,7 @@ const AboutInfo = styled.div`
     color: #333f4c;
     font-size: 25px;
     padding: 50px 0;
-    @media (max-width: 1200px) and (min-width: 374px) {
+    @media (max-width: 1200px) and (min-width: 320px) {
         padding: 50px;
     }
     position: relative;
@@ -37,7 +37,7 @@ const AboutInfo = styled.div`
 const AboutInfoCurrent = styled.div`
     color: #333f4c;
     font-size: 25px;
-    @media (max-width: 769px) and (min-width: 374px) {
+    @media (max-width: 769px) and (min-width: 320px) {
         font-size: 18px;
     }
     padding: 50px 0;
@@ -65,7 +65,7 @@ const AboutInfoCurrent = styled.div`
 const AboutInfoPast = styled.div`
     color: #333f4c;
     font-size: 22px;
-    @media (max-width: 769px) and (min-width: 374px) {
+    @media (max-width: 769px) and (min-width: 320px) {
         font-size: 18px;
     }
     padding: 13px 0 50px 0;
@@ -85,7 +85,7 @@ const AboutInfoPast = styled.div`
 const Skills = styled.div`
     color: #333f4c;
     font-size: 22px;
-    @media (max-width: 769px) and (min-width: 374px) {
+    @media (max-width: 769px) and (min-width: 320px) {
         font-size: 18px;
     }
     padding: 13px 0 50px 0;
@@ -116,7 +116,7 @@ const SkillsLi = styled.li`
     margin-bottom: 10px;
     margin-right: 10px;
     font-size: 16px;
-    @media (max-width: 769px) and (min-width: 374px) {
+    @media (max-width: 769px) and (min-width: 320px) {
         font-size: 14px;
     }
     transition: background 0.3s ease;

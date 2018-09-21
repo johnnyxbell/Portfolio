@@ -53,9 +53,7 @@ module.exports = function(env) {
                     comments: false
                 }
             }),
-            new CopyWebpackPlugin([
-                {from:'./template/_redirects'}
-            ]),
+            new CopyWebpackPlugin([{ from: './template/_redirects' }]),
             // new CompressionPlugin({
             //     asset: '[path].gz[query]',
             //     algorithm: 'gzip',
@@ -84,18 +82,18 @@ module.exports = function(env) {
             }),
             new webpack.BannerPlugin({
                 banner:
-                `Version: ` +
-                PACKAGE.version +
-                ` Date: ` +
-                parseInt(new Date().getMonth() + 1) +
-                `/` +
-                new Date().getDate() +
-                `/` +
-                new Date().getFullYear() +
-                ` @ ` +
-                new Date().getHours() +
-                `:` +
-                new Date().getMinutes()
+                    `Version: ` +
+                    PACKAGE.version +
+                    ` Date: ` +
+                    parseInt(new Date().getMonth() + 1) +
+                    `/` +
+                    new Date().getDate() +
+                    `/` +
+                    new Date().getFullYear() +
+                    ` @ ` +
+                    new Date().getHours() +
+                    `:` +
+                    new Date().getMinutes()
             }),
             new ExtractTextPlugin(isProd ? 'styles.[hash:6].css' : 'styles.[chunkhash:6].css')
         );
@@ -116,7 +114,7 @@ module.exports = function(env) {
                 },
                 // plugin options
                 {
-                    reload: true
+                    reload: false
                 }
             ),
             new SystemBellPlugin(),
@@ -163,31 +161,31 @@ module.exports = function(env) {
                     test: /\.(scss|css)$/,
                     use: isProd // If Prod
                         ? ExtractTextPlugin.extract({
-                            fallback: 'style-loader',
-                            use: ['css-loader', 'sass-loader']
-                        })
+                              fallback: 'style-loader',
+                              use: ['css-loader', 'sass-loader']
+                          })
                         : // Else
 
-                        [
-                            {
-                                loader: 'style-loader',
-                                options: {
-                                    sourceMap: false
-                                }
-                            },
-                            {
-                                loader: 'css-loader',
-                                options: {
-                                    sourceMap: true
-                                }
-                            },
-                            {
-                                loader: 'sass-loader',
-                                options: {
-                                    sourceMap: true
-                                }
-                            }
-                        ]
+                          [
+                              {
+                                  loader: 'style-loader',
+                                  options: {
+                                      sourceMap: false
+                                  }
+                              },
+                              {
+                                  loader: 'css-loader',
+                                  options: {
+                                      sourceMap: true
+                                  }
+                              },
+                              {
+                                  loader: 'sass-loader',
+                                  options: {
+                                      sourceMap: true
+                                  }
+                              }
+                          ]
                 },
                 {
                     test: /\.(js|jsx)$/,
@@ -259,7 +257,7 @@ module.exports = function(env) {
             port: 2837,
             compress: isProd,
             inline: !isProd,
-            hot: false,
+            hot: true,
             quiet: true,
             overlay: {
                 errors: true,

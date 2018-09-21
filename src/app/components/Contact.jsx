@@ -6,7 +6,8 @@ const ContactPanel = styled.div`
     color: #333f4c;
     font-size: 25px;
     padding: 50px 0;
-    @media (max-width: 1200px) and (min-width: 374px) {
+    background: #f7f7f9;
+    @media (max-width: 1200px) and (min-width: 320px) {
         padding: 50px;
     }
     position: relative;
@@ -28,7 +29,7 @@ const ContactInfo = styled.div`
     margin: 0 auto;
     color: #333f4c;
     font-size: 22px;
-    @media (max-width: 769px) and (min-width: 374px) {
+    @media (max-width: 769px) and (min-width: 3px) {
         font-size: 18px;
     }
     padding: 13px 0 25px 0;
@@ -53,7 +54,6 @@ const ContactInfo = styled.div`
         bottom: 10px;
     }
 `;
-
 class Contact extends React.Component {
     render() {
         return (

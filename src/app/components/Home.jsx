@@ -25,8 +25,14 @@ const SocialPanel = styled.div`
     position: absolute;
     top: 20px;
     right: 20px;
-    @media (max-width: 414px) and (min-width: 374px) {
-        display: none;
+    @media (max-width: 414px) and (min-width: 320px) {
+        position: initial;
+        width: 245px;
+        margin: auto;
+        padding-top: 20px;
+        opacity: 0.7;   
+        top: auto;
+        right: auto;
     }
 `;
 
@@ -53,7 +59,7 @@ const BioText = styled.p`
     color: #ccc;
     text-align: center;
     font-size: 2.5rem;
-    @media (max-width: 769px) and (min-width: 374px) {
+    @media (max-width: 769px) and (min-width: 320px) {
         font-size: 25px;
     }
     font-weight: 300;
