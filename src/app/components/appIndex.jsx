@@ -17,7 +17,6 @@ class AppIndex extends React.Component {
     render() {
         return (
             <div>
-                <Test />
                 <Home />
                 <About />
                 <Portfolio />
