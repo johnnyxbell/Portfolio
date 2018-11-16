@@ -6,7 +6,7 @@ const AboutPanel = styled.div`
     position: relative;
     background: url(${AboutBg}) no-repeat center center fixed;
     background-size: cover;
-    width:100vw;
+    width: 100vw;
     min-height: 250px;
 `;
 
@@ -164,12 +164,13 @@ class About extends React.Component {
                         in <strong>San Francisco, California</strong>.
                     </AboutInfoCurrent>
                     <AboutInfoPast>
-                        I've been coding the internet for the past 10 years and working all over the world. 
-                        Over that time, I’ve managed people, been a tech lead; now, I love being an individual 
-                        contributor and calling the Bay Area home! <br /> In the past I've worked for{' '}
+                        I've been coding the internet for the past 10 years and working all over the world. Over that
+                        time, I’ve managed people, been a tech lead; now, I love being an individual contributor and
+                        calling the Bay Area home! <br /> In the past I've worked for{' '}
                         <a href="http://doctor.com" target="_blank" rel="noopener noreferrer">
                             Doctor.com
-                        </a>{' '} and {' '}
+                        </a>{' '}
+                        and{' '}
                         <a href="http://foyerlive.com" target="_blank" rel="noopener noreferrer">
                             FoyerLive
                         </a>{' '}
@@ -185,7 +186,9 @@ class About extends React.Component {
                         </a>{' '}
                         in <strong>Melbourne AU</strong>.
                         <p>
-                        Outside of technology, I like skateboarding, going to concerts, hiking, relaxing with my other half, discovering new areas around the US, tasting new craft beers, and annoying my girlfriend by getting more tattoos.
+                            Outside of technology, I like skateboarding, going to concerts, hiking, relaxing with my
+                            other half, discovering new areas around the US, tasting new craft beers, and annoying my
+                            girlfriend by getting more tattoos.
                         </p>
                     </AboutInfoPast>
                     <Skills>
