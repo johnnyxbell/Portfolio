@@ -7,7 +7,8 @@
     "watch": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
     "kill": "killall -9 node",
     "build": "rm -rf build && NODE_ENV=production webpack --env.prod=true",
-    "flow": "flow; test $? -eq 0 -o $? -eq 2"
+    "flow": "flow; test $? -eq 0 -o $? -eq 2",
+    "heroku-postbuild": "rm -rf build && NODE_ENV=production webpack --env.prod=true"
   },
   "repository": {
     "type": "git"
