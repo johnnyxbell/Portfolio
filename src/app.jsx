@@ -2,10 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'whatwg-fetch';
 import 'babel-polyfill';
-/*eslint-disable*/
-import Styles from './app/assets/css/styles.css';
 import ReactGA from 'react-ga';
 import * as Sentry from '@sentry/browser';
+import WebFont from 'webfontloader';
+
+WebFont.load({
+    google: {
+        families: ['Gudea:400,400i,700']
+    }
+});
 
 Sentry.init({
     dsn: 'https://a9b4d602eefd4f0aa25f531cacec41dd@sentry.io/1324764'
