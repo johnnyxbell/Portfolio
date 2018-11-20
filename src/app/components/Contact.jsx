@@ -63,7 +63,7 @@ class Contact extends React.Component {
                         For new projects, ideas, job opportunities or anything you’d like to discuss, email me at{' '}
                         <a href="mailto:hi@johnnybell.io">hi@johnnybell.io</a>
                     </p>
-                    <p>+1 415 937 3187</p>
+                    <p>+1 415 937 3187 🇺🇸</p>
                 </ContactInfo>
             </ContactPanel>
         );
