@@ -54,14 +54,14 @@ module.exports = function(env) {
                 }
             }),
             new CopyWebpackPlugin([{ from: './template/_redirects' }]),
-            // new CompressionPlugin({
-            //     asset: '[path].gz[query]',
-            //     algorithm: 'gzip',
-            //     test: /\.js$|\.css$|\.html$/,
-            //     threshold: 0,
-            //     minRatio: 0.9,
-            //     deleteOriginalAssets: false
-            // }),
+            new CompressionPlugin({
+                asset: '[path].gz[query]',
+                algorithm: 'gzip',
+                test: /\.js$|\.css$|\.html$/,
+                threshold: 0,
+                minRatio: 0.9,
+                deleteOriginalAssets: true
+            }),
             new HtmlWebpackPlugin({
                 inject: false,
                 template: './template/index.ejs',
