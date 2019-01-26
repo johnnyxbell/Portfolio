@@ -70,13 +70,9 @@
     "copy-webpack-plugin": "^4.5.1",
     "eslint-config-prettier": "^2.2.0",
     "file-loader": "^1.1.5",
-<<<<<<< HEAD
     "google-fonts-plugin": "^2.0.2",
     "google-fonts-webpack-plugin": "^0.4.4",
-    "image-webpack-loader": "^3.4.2",
-=======
     "image-webpack-loader": "^4.6.0",
->>>>>>> updated webpack-image
     "prettier": "^1.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
