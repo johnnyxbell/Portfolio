@@ -68,7 +68,7 @@ module.exports = function(env) {
                 appMountId: 'app',
                 title: 'Johnny Bell Portfolio - Frontend Engineer',
                 mobile: true,
-                gzipcss: true,
+                gzipcss: false,
                 gzipjs: true,
                 hash: false,
                 favicon: './app/assets/images/favicon.ico',
