@@ -122,6 +122,23 @@ class Portfolio extends React.Component {
                         </Description>
                     </PortfolioItem>
                     <PortfolioItem>
+                        <a href ="https://www.doctor.com/solutions/universal-scheduling" target="_blank" rel="noopener noreferrer">
+                            <img src={ddc} alt="Doctor.com" />
+                        </a>
+                        <Tools>
+                            <img src={ReactLogo} alt="react"/>
+                            <img src={ReduxLogo} alt="redux"/>
+                            <img src={WebpackLogo} alt="webpack"/> 
+                            <img src={StyledLogo} alt="styled components"/> 
+                        </Tools>
+                        <Description>
+                            <a href ="https://www.doctor.com/solutions/universal-scheduling" target="_blank" rel="noopener noreferrer">
+                                <h3>Doctor.com Provider Admin</h3>
+                            </a>
+                            <p>A dashboard for healthcare providers to manage their listings, reviews, and appointments.</p>
+                        </Description>
+                    </PortfolioItem>
+                    <PortfolioItem>
                         <a href="https://www.doctor.com/scan-v3" target="_blank" rel="noopener noreferrer">
                             <img src={ScanTool} alt="Scantool Doctor.com" />
                         </a>
