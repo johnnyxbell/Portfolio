@@ -53,7 +53,6 @@ module.exports = function(env) {
                     comments: false
                 }
             }),
-            new CopyWebpackPlugin([{ from: './template/_redirects' }]),
             new CompressionPlugin({
                 asset: '[path].gz[query]',
                 algorithm: 'gzip',
