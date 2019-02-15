@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import 'whatwg-fetch';
 import 'babel-polyfill';
 import ReactGA from 'react-ga';
-import * as Sentry from '@sentry/browser';
 import WebFont from 'webfontloader';
 
 WebFont.load({
@@ -12,9 +11,6 @@ WebFont.load({
     }
 });
 
-Sentry.init({
-    dsn: 'https://a9b4d602eefd4f0aa25f531cacec41dd@sentry.io/1324764'
-});
 ReactGA.initialize('UA-73328361-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
