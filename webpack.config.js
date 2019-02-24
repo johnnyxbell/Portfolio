@@ -6,7 +6,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const SystemBellPlugin = require('system-bell-webpack-plugin');
-const NyanProgressPlugin = require('nyan-progress-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const PACKAGE = require('./package.json');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -116,8 +115,7 @@ module.exports = function(env) {
                     reload: false
                 }
             ),
-            new SystemBellPlugin(),
-            new NyanProgressPlugin()
+            new SystemBellPlugin()
         );
     }
 
