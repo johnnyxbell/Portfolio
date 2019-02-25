@@ -1,14 +1,9 @@
 const webpack = require('webpack');
 const path = require('path');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-const SystemBellPlugin = require('system-bell-webpack-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
 const PACKAGE = require('./package.json');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const sourcePath = path.join(__dirname, './src');
 const staticsPath = path.join(__dirname, './build');
@@ -95,28 +90,6 @@ module.exports = function(env) {
             }),
             new ExtractTextPlugin(isProd ? 'styles.[hash:6].css' : 'styles.[chunkhash:6].css')
         );
-    } else {
-        plugins.push(
-            new webpack.HotModuleReplacementPlugin(),
-            new BrowserSyncPlugin(
-                // BrowserSync options
-                {
-                    host: 'localhost',
-                    port: 2837,
-                    open: false,
-                    // proxy the Webpack Dev Server endpoint
-                    // (which should be serving on http://localhost:8080/)
-                    // through BrowserSync
-                    proxy: 'http://localhost:2837/',
-                    logPrefix: 'JB'
-                },
-                // plugin options
-                {
-                    reload: false
-                }
-            ),
-            new SystemBellPlugin()
-        );
     }
 
     return {
@@ -196,32 +169,14 @@ module.exports = function(env) {
                 {
                     test: /\.(png|jpg|mp4)$/,
                     exclude: /node_modules/,
-                    use: [
-                        {
-                            loader: 'url-loader',
-                            options: {
-                                query: {
-                                    name: 'app/assets/images/[name].[ext]'
-                                }
-                            }
-                        },
-                        {
-                            loader: 'image-webpack-loader',
-                            options: {
-                                query: {
-                                    mozjpeg: {
-                                        progressive: true
-                                    },
-                                    gifsicle: {
-                                        interlaced: true
-                                    },
-                                    optipng: {
-                                        optimizationLevel: 7
-                                    }
-                                }
+                    use: {
+                        loader: 'file-loader',
+                        options: {
+                            query: {
+                                name: 'app/assets/images/[name].[ext]'
                             }
                         }
-                    ]
+                    }
                 },
                 {
                     test: /\.svg$/,
