@@ -90,6 +90,8 @@ module.exports = function(env) {
             }),
             new ExtractTextPlugin(isProd ? 'styles.[hash:6].css' : 'styles.[chunkhash:6].css')
         );
+    } else {
+        plugins.push(new webpack.HotModuleReplacementPlugin());
     }
 
     return {
@@ -208,7 +210,7 @@ module.exports = function(env) {
             historyApiFallback: true,
             port: 2837,
             compress: isProd,
-            inline: !isProd,
+            inline: true,
             hot: true,
             quiet: true,
             overlay: {

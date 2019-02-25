@@ -4,25 +4,25 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-injectGlobal`
+export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Gudea', sans-serif;
     font-display: auto;
-  }
-`;
+  }`;
 
 class AppIndex extends React.Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
+                <GlobalStyle />
                 <Home />
                 <About />
                 <Portfolio />
                 <Contact />
-            </div>
+            </React.Fragment>
         );
     }
 }
