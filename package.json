@@ -62,7 +62,7 @@
     "url-loader": "^0.6.2",
     "webfontloader": "^1.6.28",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^3.2.0"
+    "webpack-dev-server": "2.4.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.7",
