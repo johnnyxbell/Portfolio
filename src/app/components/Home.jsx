@@ -30,7 +30,7 @@ const SocialPanel = styled.div`
         width: 245px;
         margin: auto;
         padding-top: 20px;
-        opacity: 0.7;   
+        opacity: 0.7;
         top: auto;
         right: auto;
     }
@@ -97,7 +97,7 @@ class Home extends React.Component {
                     <ProfilePic src={Profile} alt="Johnny Bell Profile Pic" />
                     <BioText>
                         G’day mates, I’m Johnny 👋🏻 <br />a <strong>frontend engineer</strong> from{' '}
-                        <strong>Australia.</strong> Working with the awesome team at <strong>Stackshare</strong> in{' '}
+                        <strong>Australia.</strong> Working with the awesome team at <strong>StackShare</strong> in{' '}
                         <strong>San Francisco</strong>.
                     </BioText>
                 </Bio>
