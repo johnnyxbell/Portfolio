@@ -178,10 +178,12 @@ class About extends React.Component {
                         in <strong>San Francisco CA</strong>, as well as{' '}
                         <a href="http://www.officeworks.com.au/" target="_blank" rel="noopener noreferrer">
                             Officeworks
-                        </a>,{' '}
+                        </a>
+                        ,{' '}
                         <a href="http://dt.com.au/" target="_blank" rel="noopener noreferrer">
                             DT Digital
-                        </a>,{' '}
+                        </a>
+                        ,{' '}
                         <a href="http://ie.com.au/" target="_blank" rel="noopener noreferrer">
                             IE Digital
                         </a>{' '}
@@ -190,6 +192,12 @@ class About extends React.Component {
                             Outside of technology, I like skateboarding, going to concerts, hiking, relaxing with my
                             other half, discovering new areas around the US, tasting new craft beers, and annoying my
                             girlfriend by getting more tattoos.
+                        </p>
+                        <p>
+                            I'm also the founder of{' '}
+                            <a href="https://twitter.com/dwdisabilities" rel="noopener noreferrer" target="_blank">
+                                Devs with Disabilities
+                            </a>
                         </p>
                     </AboutInfoPast>
                     <Skills>
