@@ -195,7 +195,7 @@ class About extends React.Component {
                         </p>
                         <p>
                             I'm also the founder of{' '}
-                            <a href="https://twitter.com/dwdisabilities" rel="noopener noreferrer" target="_blank">
+                            <a href="https://dwd.dev" rel="noopener noreferrer" target="_blank">
                                 Devs with Disabilities
                             </a>
                         </p>
