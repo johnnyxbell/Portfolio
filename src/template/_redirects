@@ -2,6 +2,3 @@
 https://johnnyxbell.com/* https://johnnybell.io/:splat 301!
 https://www.johnnyxbell.com/* https://johnnybell.io/:splat 301!
 https://www.johnnybell.io/* https://johnnybell.io/:splat 301!
-
-# Optional: Redirect default Netlify subdomain to primary domain
-https://hopeful-mahavira-1f1c2b.netlify.com/* https://johnnybell.io/:splat 301!
