@@ -2,7 +2,6 @@ const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
 const PACKAGE = require('./package.json');
 
 const sourcePath = path.join(__dirname, './src');
@@ -46,15 +45,7 @@ module.exports = function(env) {
         output: {
           comments: false
         }
-      }),
-      new CompressionPlugin({
-        asset: '[path].gz[query]',
-        algorithm: 'gzip',
-        test: /\.js$|\.css$|\.html$/,
-        threshold: 0,
-        minRatio: 0.9,
-        deleteOriginalAssets: true
-      }),
+      })
       new HtmlWebpackPlugin({
         inject: false,
         template: './template/index.ejs',
