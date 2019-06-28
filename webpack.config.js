@@ -45,7 +45,7 @@ module.exports = function(env) {
         output: {
           comments: false
         }
-      })
+      }),
       new HtmlWebpackPlugin({
         inject: false,
         template: './template/index.ejs',
